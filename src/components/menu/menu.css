@@ -1,8 +1,12 @@
 .large-option {
     color: black;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: Arial;
 }
 
 .small-option {
@@ -40,7 +44,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: grey;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -53,13 +57,18 @@
     transition-timing-function: ease-out;
 }
 
-.large-option:hover, .large-option:focus, .large-option:active {
+.large-option:hover, .large-option:focus {
     color: white;
+    text-decoration: none;
 }
 
-.active, .large-option:hover:before, .large-option:focus:before, .large-option:active:before {
+.large-option:hover:before, .large-option:focus:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+a:active {
+    background: grey;
 }

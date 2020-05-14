@@ -20,7 +20,7 @@ function NewsCardComponent(props) {
         <CardComponent
             title={props.title}
             body={cardBody}
-            width={"18rem"}
+            width={"17rem"}
         />
     )
 }

@@ -5,7 +5,7 @@ import './right-menu.css'
 
 function RightMenuComponent() {
     return (
-        <Col className="column" md={3}>
+        <Col className="column" md={2}>
             <Form.Group className="form">
                 <Form.Control placeholder="Large text" />
             </Form.Group>

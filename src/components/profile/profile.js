@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { Button } from 'react-bootstrap';
 import StructureComponent from '../structure/structure'
 import QuestionCardComponent from '../question-card/question-card'
@@ -26,25 +26,26 @@ function ProfileComponent() {
                     id = {info.id}
                 />
             </div>)
-    const body = <div className="container">
-        <CarouselComponent
-            images={images}
-        />
-        <div className="edit-information">
-            <img
-                className="profile-image"
-                src="https://images.unsplash.com/photo-1542108226-9130e1e83cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80"
-                alt="Foro de perfil."
+    const body = 
+        <Fragment>
+            <CarouselComponent
+                images={images}
             />
-            <Button variant="outline-primary">Editar</Button>
-        </div>
-        <div className="personal-information">
-            <h5 className="string-format"> Oriana Florencia Arévalos </h5>
-            <p className="string-format">19 de septiembre de 1998</p>
-            <p className="string-format">Berisso</p>
-        </div>
-        <div>{listOfCards}</div>
-    </div>
+            <div className="edit-information">
+                <img
+                    className="profile-image"
+                    src="https://images.unsplash.com/photo-1542108226-9130e1e83cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=688&q=80"
+                    alt="Foro de perfil."
+                />
+                <Button variant="outline-primary">Editar</Button>
+            </div>
+            <div className="personal-information">
+                <h5 className="string-format"> Oriana Florencia Arévalos </h5>
+                <p className="string-format">19 de septiembre de 1998</p>
+                <p className="string-format">Berisso</p>
+            </div>
+            <div>{listOfCards}</div>
+        </Fragment>
 
     // RETURN
     return (
