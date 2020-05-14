@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Alert } from 'react-bootstrap';
 import ModalComponent from '../modal/modal'
 import FormComponent from '../form/form'
+import HookFormComponent from '../hook-form/hook-form'
 import CardComponent from '../card/card'
 
 function QuestionCardComponent(props) {
@@ -11,11 +12,15 @@ function QuestionCardComponent(props) {
     const inputs = {}
     const modalBody =
         <React.Fragment>
-            {   Object.entries(props.answers).map((element) => {
-                { inputs[(element[0] === 'correct') ? 'Respuesta correcta' : `Respuesta incorrecta ${element[0].substr(-1)}`]= element[1] }
+            {Object.entries(props.answers).map((element) => {
+                { inputs[(element[0] === 'correct') ? 'Respuesta correcta' : `Respuesta incorrecta ${element[0].substr(-1)}`] = element[1] }
 
             })}
-            <FormComponent
+            {/* <FormComponent
+                inputs={inputs}
+                id={props.id}
+            /> */}
+            < HookFormComponent
                 inputs={inputs}
                 id={props.id}
             />

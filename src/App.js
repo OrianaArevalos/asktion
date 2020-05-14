@@ -12,8 +12,8 @@ function App() {
       //     {/* <Route exact path={} /> */}
       //   </React.Fragment>
       // </Router>
-      // <ProfileComponent />
-      <HomeComponent />
+      <ProfileComponent />
+      // <HomeComponent />
   );
 }
 

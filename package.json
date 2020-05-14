@@ -10,6 +10,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
     "react-icons": "^3.10.0",
     "react-masonry-css": "^1.0.14",
     "react-media": "^1.10.0",
