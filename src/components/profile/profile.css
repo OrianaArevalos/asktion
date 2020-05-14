@@ -1,0 +1,39 @@
+.container {
+    padding: 0%;
+}
+
+.profile-image {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    border: none;
+    border-radius:150px;
+    border:5px solid #666;
+}
+
+.carousel-image {
+    height: 300px;
+    width: 100%;
+}
+
+.edit-information {
+    margin-top: 10px;
+    margin-bottom: 10%;
+    margin-left: 80%;
+}
+
+.string-format {
+    color: gray;
+    margin-bottom: 0px;
+    font-family:courier;
+}
+
+.personal-information {
+    margin-left: 2%;
+}
+
+.card {
+    margin: 10px;
+}
